@@ -1,1 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+<title>TechPulse — 9 Nisan 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{width:100%;height:100%;overflow:hidden;background:#111;font-family:'Inter',sans-serif;}
+.reading-progress-wrap{position:fixed;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.1);z-index:2000;}
+.reading-progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#c0392b,#e74c3c);transition:width 0.3s ease;}
+.session-badge{position:fixed;top:8px;right:70px;background:rgba(0,0,0,0.75);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:0.6rem;font-weight:600;padding:5px 12px;border-radius:20px;z-index:1500;display:flex;align-items:center;gap:6px;letter-spacing:0.04em;}
+.sbdot{width:6px;height:6px;border-radius:50%;background:#27ae60;animation:pulse 2s ease infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.8);}}
+.book-container{width:100%;height:100vh;position:relative;overflow:hidden;}
+.page{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;background:#fff;will-change:transform,opacity;}
+.page.active{transform:translateX(0);opacity:1;z-index:10;pointer-events:auto;}
+.page.prev{transform:translateX(-100%);opacity:0;z-index:5;pointer-events:none;}
+.page.next{transform:translateX(100%);opacity:0;z-index:5;pointer-events:none;}
+.nav-btn{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.7);border:1px solid rgba(255,255,255,0.15);color:#fff;font-size:1.1rem;cursor:pointer;z-index:1000;display:flex;align-items:center;justify-content:center;transition:background .2s;-webkit-tap-highlight-color:transparent;}
+.nav-btn:hover{background:rgba(192,57,43,0.85);}
+.nav-btn.prev-btn{left:10px;}
+.nav-btn.next-btn{right:10px;}
+.nav-btn.disabled{opacity:0.15;pointer-events:none;}
+.page-dots{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:1000;}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.25);cursor:pointer;transition:background .2s,transform .2s;}
+.dot.active{background:#c0392b;transform:scale(1.35);}
+.dot.read{background:rgba(255,255,255,0.5);}
+.next-teaser{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.85) 60%);padding:30px 20px 48px;display:flex;align-items:flex-end;justify-content:space-between;pointer-events:none;z-index:50;}
+.nt-label{font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px;}
+.nt-title{font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:rgba(255,255,255,0.9);max-width:260px;line-height:1.3;}
+.nt-arrow{color:rgba(255,255,255,0.4);font-size:1.4rem;animation:bounceR 1.4s ease infinite;}
+@keyframes bounceR{0%,100%{transform:translateX(0);}50%{transform:translateX(5px);}}
+.breaking-banner{background:#c0392b;color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:5px 14px;display:flex;align-items:center;gap:10px;overflow:hidden;}
+.breaking-label{background:#fff;color:#c0392b;padding:1px 7px;font-size:0.58rem;border-radius:1px;flex-shrink:0;font-weight:800;}
+.breaking-ticker{white-space:nowrap;animation:ticker 40s linear infinite;flex:1;min-width:0;}
+@keyframes ticker{from{transform:translateX(100vw);}to{transform:translateX(-200%);}}
+.masthead{display:flex;align-items:center;justify-content:space-between;padding:8px 18px 6px;border-bottom:4px solid #111;gap:12px;background:#fff;}
+.masthead-logo{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,5vw,2.8rem);font-weight:900;line-height:1;flex-shrink:0;color:#111;}
+.masthead-logo .accent{color:#c0392b;}
+.masthead-right{text-align:right;font-size:0.6rem;color:#777;line-height:1.7;}
+.masthead-right strong{color:#111;}
+.page-label{padding:4px 18px;font-size:0.63rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;justify-content:space-between;background:#111;color:#fff;}
+.pl-right{color:rgba(255,255,255,0.5);}
+.p1-layout{display:grid;grid-template-columns:3fr 2fr;height:calc(100vh - 110px);}
+@media(max-width:650px){.p1-layout{grid-template-columns:1fr;height:calc(100vh - 105px);overflow-y:auto;}}
+.hero{position:relative;overflow:hidden;cursor:pointer;background:#0d0d0d;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#0d0d0d 0%,#1a0808 35%,#0a1a2a 70%,#1a1a1a 100%);}
+.hero-visual{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+.hero-visual svg{opacity:0.1;}
+.hero-gradient{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent 0%,rgba(0,0,0,0.6) 40%,rgba(0,0,0,0.97) 100%);padding:50px 20px 20px;}
+.hero-tag{display:inline-block;background:#c0392b;color:#fff;font-size:0.58rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;padding:3px 9px;margin-bottom:8px;}
+.hero-hl{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3.2vw,2rem);font-weight:900;line-height:1.1;color:#fff;margin-bottom:8px;}
+.hero-curiosity{font-size:0.82rem;line-height:1.55;color:rgba(255,255,255,0.75);margin-bottom:10px;font-style:italic;}
+.hero-cta{display:inline-flex;align-items:center;gap:6px;background:rgba(192,57,43,0.85);color:#fff;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 14px;cursor:pointer;transition:background .15s;text-decoration:none;}
+.hero-cta:hover{background:#c0392b;}
+.hero-footer{display:flex;align-items:center;gap:8px;font-size:0.6rem;color:rgba(255,255,255,0.45);margin-top:8px;}
+.hero-src{font-weight:700;color:rgba(255,255,255,0.7);}
+.hold-hint{position:absolute;top:12px;right:12px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.6);font-size:0.52rem;padding:3px 8px;border-radius:10px;pointer-events:none;}
+.p1-sidebar{overflow-y:auto;scrollbar-width:thin;border-left:2px solid #111;}
+.sa{padding:13px 15px;border-bottom:1px solid #eee;cursor:pointer;position:relative;transition:background .15s;}
+.sa:hover{background:#f8f8f8;}
+.sa-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#ebebeb;line-height:1;}
+.sa-cat{font-size:0.56rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:3px;}
+.sa-title{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;line-height:1.25;color:#111;margin-bottom:4px;}
+.sa-curiosity{font-size:0.72rem;line-height:1.45;color:#666;font-style:italic;}
+.sa-meta{font-size:0.58rem;color:#aaa;margin-top:5px;}
+.sa-meta .src{font-weight:600;color:#555;}
+.sa-rt{position:absolute;top:13px;right:13px;background:#f0f0f0;color:#888;font-size:0.52rem;font-weight:600;padding:2px 6px;border-radius:8px;}
+.new-badge{display:inline-block;background:#27ae60;color:#fff;font-size:0.5rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:1px 5px;border-radius:2px;margin-right:5px;vertical-align:middle;}
+.p2-wrap{background:#0d0d0d;color:#fff;height:calc(100vh - 110px);overflow-y:auto;scrollbar-width:thin;padding:18px;}
+.p2-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+@media(min-width:560px){.p2-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:860px){.p2-grid{grid-template-columns:1fr 1fr 1fr;}}
+.ai-card{border:1px solid rgba(255,255,255,0.07);border-radius:3px;overflow:hidden;cursor:pointer;transition:border-color .2s,transform .2s;background:rgba(255,255,255,0.025);position:relative;}
+.ai-card:hover{border-color:rgba(192,57,43,0.5);transform:translateY(-2px);}
+.ai-card-img{height:130px;position:relative;overflow:hidden;}
+.ai-card-img-n{position:absolute;bottom:6px;left:10px;font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1;}
+.ai-card-body{padding:13px;}
+.ai-cat{font-size:0.56rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#c0392b;margin-bottom:5px;}
+.ai-title{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;line-height:1.25;color:#fff;margin-bottom:5px;}
+.ai-curiosity{font-size:0.72rem;line-height:1.5;color:rgba(255,255,255,0.45);font-style:italic;margin-bottom:8px;}
+.ai-footer{display:flex;align-items:center;justify-content:space-between;}
+.ai-meta{font-size:0.58rem;color:rgba(255,255,255,0.3);}
+.ai-meta .src{color:rgba(255,255,255,0.55);font-weight:600;}
+.ai-rt{background:rgba(192,57,43,0.18);color:#e88;font-size:0.52rem;font-weight:600;padding:2px 6px;border-radius:8px;}
+.ai-card.feat{grid-column:1/-1;display:grid;grid-template-columns:1fr;}
+@media(min-width:560px){.ai-card.feat{grid-template-columns:2fr 3fr;}}
+.ai-card.feat .ai-card-img{height:100%;min-height:160px;}
+.p3-wrap{background:#faf8f3;height:calc(100vh - 110px);overflow-y:auto;scrollbar-width:thin;}
+.p3-hero{position:relative;overflow:hidden;cursor:pointer;background:linear-gradient(100deg,#0a1628 0%,#1a2a4a 60%,#0d1a35 100%);padding:22px 20px;min-height:160px;}
+.p3-hero-label{font-size:0.58rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5ba3d9;margin-bottom:6px;}
+.p3-hero-hl{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3.5vw,2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:6px;}
+.p3-hero-curiosity{font-size:0.8rem;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.5;margin-bottom:10px;}
+.p3-hero-cta{display:inline-flex;align-items:center;gap:5px;background:rgba(41,128,185,0.8);color:#fff;font-size:0.62rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:5px 12px;text-decoration:none;transition:background .15s;cursor:pointer;}
+.p3-hero-cta:hover{background:#2980b9;}
+.p3-grid{display:grid;grid-template-columns:1fr;gap:0;}
+@media(min-width:560px){.p3-grid{grid-template-columns:1fr 1fr;}}
+@media(min-width:860px){.p3-grid{grid-template-columns:1fr 1fr 1fr;}}
+.tech-card{padding:15px 18px;border-bottom:1px solid #e0ddd5;border-right:1px solid #e0ddd5;cursor:pointer;transition:background .15s;position:relative;}
+.tech-card:hover{background:#f0ece0;}
+.tc-accent{height:3px;width:28px;margin-bottom:9px;border-radius:2px;}
+.tc-title{font-family:'Playfair Display',serif;font-size:0.93rem;font-weight:700;line-height:1.25;color:#111;margin-bottom:4px;}
+.tc-curiosity{font-size:0.7rem;line-height:1.45;color:#777;font-style:italic;margin-bottom:5px;}
+.tc-meta{font-size:0.57rem;color:#aaa;}
+.tc-meta .src{font-weight:600;color:#555;}
+.tc-rt{position:absolute;top:15px;right:15px;background:#eee;color:#888;font-size:0.52rem;font-weight:600;padding:2px 6px;border-radius:8px;}
+.p4-wrap{background:#fff;height:calc(100vh - 110px);overflow-y:auto;scrollbar-width:thin;padding:18px;}
+.p4-header{text-align:center;border-bottom:3px solid #111;padding-bottom:12px;margin-bottom:16px;}
+.p4-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3.5vw,2rem);font-weight:900;}
+.p4-header p{font-size:0.72rem;color:#666;margin-top:3px;}
+.vc-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:16px;}
+@media(min-width:600px){.vc-grid{grid-template-columns:1fr 1fr;}}
+.vc{border:2px solid #111;padding:15px 15px 15px 19px;cursor:pointer;transition:background .15s,transform .15s;position:relative;overflow:hidden;}
+.vc:hover{background:#f9f9f9;transform:translateY(-2px);}
+.vc::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:#c0392b;}
+.vc-amt{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:#c0392b;line-height:1;margin-bottom:3px;}
+.vc-round{font-size:0.58rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#aaa;margin-bottom:7px;}
+.vc-title{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:#111;line-height:1.25;margin-bottom:4px;}
+.vc-curiosity{font-size:0.72rem;color:#666;font-style:italic;line-height:1.45;}
+.vc-meta{font-size:0.58rem;color:#aaa;margin-top:5px;}
+.vl{border-top:2px solid #111;padding-top:12px;}
+.vl h3{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;margin-bottom:9px;}
+.vl-item{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #eee;cursor:pointer;transition:background .1s;}
+.vl-item:last-child{border-bottom:none;}
+.vl-amt{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:900;color:#c0392b;white-space:nowrap;min-width:55px;text-align:right;}
+.vl-info{flex:1;}
+.vl-title{font-size:0.83rem;font-weight:600;color:#111;margin-bottom:2px;}
+.vl-meta{font-size:0.58rem;color:#aaa;}
+.popup{position:fixed;z-index:800;background:#111;color:#fff;padding:13px 15px;border-radius:5px;width:250px;box-shadow:0 8px 32px rgba(0,0,0,0.6);font-size:0.75rem;pointer-events:none;opacity:0;transform:translateY(6px);transition:opacity .15s,transform .15s;}
+.popup.show{opacity:1;transform:translateY(0);}
+.popup-title{font-family:'Playfair Display',serif;font-size:0.88rem;font-weight:700;margin-bottom:5px;}
+.popup-text{color:rgba(255,255,255,0.55);font-size:0.68rem;line-height:1.5;}
+.popup-link{display:block;margin-top:7px;color:#c0392b;font-size:0.62rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;}
+.vo{position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:900;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;opacity:0;pointer-events:none;transition:opacity .25s;}
+.vo.show{opacity:1;pointer-events:auto;}
+.vo-close{position:absolute;top:18px;right:18px;color:#fff;font-size:1.4rem;cursor:pointer;background:rgba(255,255,255,0.08);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .15s;}
+.vo-close:hover{background:rgba(192,57,43,0.7);}
+.vo-title{color:#fff;font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;text-align:center;max-width:480px;padding:0 20px;}
+.vo-ph{width:min(540px,90vw);aspect-ratio:16/9;background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:rgba(255,255,255,0.4);font-size:0.78rem;}
+.press-ring{position:fixed;width:56px;height:56px;border-radius:50%;border:3px solid #c0392b;pointer-events:none;z-index:1600;opacity:0;transform:scale(0.2);}
+.press-ring.active{opacity:1;transform:scale(1);transition:transform 0.7s ease,opacity 0.7s ease;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.15);border-radius:2px;}
+</style>
+</head>
+<body>
+<div class="reading-progress-wrap"><div class="reading-progress-bar" id="rpBar"></div></div>
+<div class="session-badge" id="sessionBadge"><div class="sbdot"></div><span id="sessionText">Sayfa 1 / 4</span></div>
+<button class="nav-btn prev-btn disabled" id="prevBtn">&#8249;</button>
+<button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+<div class="page-dots" id="pageDots"></div>
+<div class="popup" id="popup"><div class="popup-title" id="popupTitle"></div><div class="popup-text" id="popupText"></div><div class="popup-link">Habere git →</div></div>
+<div class="vo" id="vo"><div class="vo-close" id="voClose">✕</div><div class="vo-title" id="voTitle"></div><div class="vo-ph"><div style="font-size:2.8rem;opacity:0.35">▶</div><div>Haber videosu burada oynar</div></div></div>
+<div class="press-ring" id="pressRing"></div>
+<div class="book-container" id="book">
 
+<div class="page active" data-page="0">
+  <div class="breaking-banner"><span class="breaking-label">Son Dakika</span><span class="breaking-ticker"></span></div>
+  <div class="masthead"><div class="masthead-logo">Tech<span class="accent">Pulse</span></div><div class="masthead-right"><strong>Sayı 14 · 9 Nisan 2026</strong><br/>TechCrunch · The Verge<br/>⏱ ~8 dakika</div></div>
+  <div class="page-label"><span>📰 Sayfa 1 — Manşet</span><span class="pl-right">1 yeni haber</span></div>
+  <div class="p1-layout">
+    <div class="hero" data-title="" data-curiosity="Bu metin mesajı üzerinden AI ajanlarını nasıl kolayca kullanabileceğimizi merak ediyorum." data-url="#" data-video="true">
+      <div class="hero-bg"></div>
+      <div class="hero-visual"><svg width="240" height="180" viewBox="0 0 240 180" fill="none"><circle cx="120" cy="90" r="65" stroke="#fff" stroke-width="1" stroke-dasharray="5 4"/><circle cx="120" cy="90" r="42" stroke="#c0392b" stroke-width="1.5"/><circle cx="120" cy="90" r="7" fill="#fff"/><line x1="20" y1="90" x2="88" y2="90" stroke="#fff" stroke-width="1"/><line x1="152" y1="90" x2="220" y2="90" stroke="#fff" stroke-width="1"/></svg></div>
+      <span class="hold-hint">⏱ Bas & bekle → video</span>
+      <div class="hero-gradient">
+        <div class="hero-tag">📰 Haber</div>
+        <div class="hero-hl"></div>
+        <div class="hero-curiosity">Bu metin mesajı üzerinden AI ajanlarını nasıl kolayca kullanabileceğimizi merak ediyorum.</div>
+        <a class="hero-cta" href="#" target="_blank">Haberin devamı →</a>
+        <div class="hero-footer"><span class="hero-src">Kaynak</span><span>·</span><span>Invalid Date</span><span>·</span><span>⏱ 4 dk</span></div>
+      </div>
+    </div>
+    <div class="p1-sidebar"></div>
+  </div>
+  <div class="next-teaser"><div><div class="nt-label">Sıradaki sayfa</div><div class="nt-title">Yapay Zeka haberleri</div></div><div class="nt-arrow">›</div></div>
+</div>
+
+<div class="page next" data-page="1">
+  <div class="breaking-banner" style="background:#1a0a0a"><span class="breaking-label" style="background:#c0392b">AI</span><span class="breaking-ticker" style="color:rgba(255,255,255,0.7)"></span></div>
+  <div class="masthead" style="background:#111;border-bottom:4px solid #c0392b"><div class="masthead-logo" style="color:#fff">Tech<span class="accent">Pulse</span></div><div class="masthead-right" style="color:#aaa"><strong style="color:#fff">Yapay Zeka</strong><br/>TechCrunch AI · The Verge AI<br/>⏱ ~7 dakika</div></div>
+  <div class="page-label" style="background:#c0392b"><span>🤖 Sayfa 2 — Yapay Zeka</span><span class="pl-right">0 haber</span></div>
+  <div class="p2-wrap"><div class="p2-grid">
+    
+    
+  </div></div>
+  <div class="next-teaser" style="background:none"><div><div class="nt-label">Sıradaki sayfa</div><div class="nt-title">Teknoloji haberleri</div></div><div class="nt-arrow">›</div></div>
+</div>
+
+<div class="page next" data-page="2">
+  <div class="breaking-banner" style="background:#0d1a2a"><span class="breaking-label" style="background:#2980b9">Tech</span><span class="breaking-ticker" style="color:rgba(255,255,255,0.7)"></span></div>
+  <div class="masthead" style="background:#0d1a2a;border-bottom:4px solid #2980b9"><div class="masthead-logo" style="color:#fff">Tech<span style="color:#2980b9">Pulse</span></div><div class="masthead-right" style="color:#aaa"><strong style="color:#fff">Teknoloji</strong><br/>The Verge Tech<br/>⏱ ~6 dakika</div></div>
+  <div class="page-label" style="background:#2980b9"><span>💻 Sayfa 3 — Teknoloji</span><span class="pl-right">0 haber</span></div>
+  <div class="p3-wrap">
+    <p style="padding:20px">Bu hafta teknoloji haberi bulunamadı.</p>
+  </div>
+  <div class="next-teaser" style="background:linear-gradient(transparent,rgba(13,26,40,0.9) 60%)"><div><div class="nt-label">Son sayfa</div><div class="nt-title">Yatırım & Girişim</div></div><div class="nt-arrow">›</div></div>
+</div>
+
+<div class="page next" data-page="3">
+  <div class="breaking-banner" style="background:#0d1a0d"><span class="breaking-label" style="background:#27ae60">Para</span><span class="breaking-ticker" style="color:rgba(255,255,255,0.7)"></span></div>
+  <div class="masthead" style="background:#0d1a0d;border-bottom:4px solid #27ae60"><div class="masthead-logo" style="color:#fff">Tech<span style="color:#27ae60">Pulse</span></div><div class="masthead-right" style="color:#aaa"><strong style="color:#fff">Yatırım & Girişim</strong><br/>TechCrunch Venture<br/>⏱ ~4 dakika</div></div>
+  <div class="page-label" style="background:#27ae60"><span>💰 Sayfa 4 — Yatırım</span><span class="pl-right">0 haber</span></div>
+  <div class="p4-wrap">
+    <div class="p4-header"><h2>Bu Haftanın Yatırımları</h2><p>TechCrunch Venture · 9 Nisan 2026</p></div>
+    <div class="vc-grid"></div>
+    
+  </div>
+</div>
+
+</div>
+<script>
+const pages = document.querySelectorAll('.page');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const dotsWrap = document.getElementById('pageDots');
+const rpBar = document.getElementById('rpBar');
+const sessionText = document.getElementById('sessionText');
+const popup = document.getElementById('popup');
+const vo = document.getElementById('vo');
+const voTitle = document.getElementById('voTitle');
+const pressRing = document.getElementById('pressRing');
+let current = 0, animating = false;
+const readPages = new Set([0]);
+
+pages.forEach((_, i) => {
+  const d = document.createElement('div');
+  d.className = 'dot' + (i === 0 ? ' active' : '');
+  d.addEventListener('click', () => goTo(i));
+  dotsWrap.appendChild(d);
+});
+
+function updateDots() {
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.classList.remove('active','read');
+    if (i === current) d.classList.add('active');
+    else if (readPages.has(i)) d.classList.add('read');
+  });
+}
+
+function updateProgress() {
+  const pct = (current / (pages.length - 1)) * 100;
+  rpBar.style.width = pct + '%';
+  const mins = [8, 6, 5, 4];
+  const remaining = mins.slice(current).reduce((a,b) => a+b, 0);
+  sessionText.textContent = 'Sayfa ' + (current+1) + ' / ' + pages.length + ' · ~' + remaining + ' dk kaldi';
+}
+
+function goTo(t) {
+  if (animating || t === current || t < 0 || t >= pages.length) return;
+  animating = true;
+  const dir = t > current ? 1 : -1;
+  const oldP = pages[current], newP = pages[t];
+  newP.style.transition = 'none';
+  newP.style.transform = 'translateX(' + (dir * 100) + '%)';
+  newP.style.opacity = '0';
+  newP.style.zIndex = '10';
+  newP.style.pointerEvents = 'none';
+  newP.offsetHeight;
+  newP.style.transition = 'transform 0.65s cubic-bezier(.77,0,.18,1), opacity 0.65s ease';
+  newP.style.transform = 'translateX(0)';
+  newP.style.opacity = '1';
+  oldP.style.transition = 'transform 0.65s cubic-bezier(.77,0,.18,1), opacity 0.65s ease';
+  oldP.style.transform = 'translateX(' + (dir * -60) + '%) scale(0.93)';
+  oldP.style.opacity = '0';
+  oldP.style.zIndex = '5';
+  setTimeout(() => {
+    oldP.className = 'page ' + (t > current ? 'prev' : 'next');
+    oldP.style.cssText = '';
+    newP.className = 'page active';
+    newP.style.cssText = '';
+    current = t;
+    readPages.add(current);
+    updateDots();
+    updateProgress();
+    updateNav();
+    animating = false;
+  }, 660);
+}
+
+function updateNav() {
+  prevBtn.classList.toggle('disabled', current === 0);
+  nextBtn.classList.toggle('disabled', current === pages.length - 1);
+}
+
+prevBtn.addEventListener('click', () => goTo(current - 1));
+nextBtn.addEventListener('click', () => goTo(current + 1));
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') goTo(current + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') goTo(current - 1);
+});
+
+let tx = 0, ty = 0;
+document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, {passive:true});
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  const dy = Math.abs(e.changedTouches[0].clientY - ty);
+  if (Math.abs(dx) > 50 && dy < 80) { dx < 0 ? goTo(current+1) : goTo(current-1); }
+}, {passive:true});
+
+let wCool = false;
+document.addEventListener('wheel', e => {
+  if (wCool) return;
+  if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 30) {
+    wCool = true;
+    e.deltaX > 0 ? goTo(current+1) : goTo(current-1);
+    setTimeout(() => wCool = false, 800);
+  }
+}, {passive:true});
+
+let hoverT;
+function showPopup(el, e) {
+  document.getElementById('popupTitle').textContent = el.dataset.title || '';
+  document.getElementById('popupText').textContent = el.dataset.curiosity || '';
+  posPopup(e);
+  popup.classList.add('show');
+}
+function posPopup(e) {
+  const pw = 250, ph = 120;
+  let x = e.clientX + 14, y = e.clientY - 10;
+  if (x + pw > window.innerWidth) x = e.clientX - pw - 14;
+  if (y + ph > window.innerHeight) y = window.innerHeight - ph - 10;
+  popup.style.left = x + 'px';
+  popup.style.top = y + 'px';
+}
+document.querySelectorAll('[data-title]').forEach(el => {
+  el.addEventListener('mouseenter', e => { hoverT = setTimeout(() => showPopup(el, e), 250); });
+  el.addEventListener('mousemove', e => posPopup(e));
+  el.addEventListener('mouseleave', () => { clearTimeout(hoverT); popup.classList.remove('show'); });
+  el.addEventListener('click', () => { const u = el.dataset.url; if (u && u !== '#') window.open(u, '_blank'); });
+});
+
+let pressT = null;
+function startPress(el, cx, cy) {
+  if (!el.dataset.video) return;
+  pressRing.style.left = (cx - 28) + 'px';
+  pressRing.style.top = (cy - 28) + 'px';
+  pressRing.className = 'press-ring';
+  void pressRing.offsetWidth;
+  pressRing.classList.add('active');
+  pressT = setTimeout(() => {
+    pressRing.className = 'press-ring';
+    voTitle.textContent = el.dataset.title || '';
+    vo.classList.add('show');
+  }, 750);
+}
+function cancelPress() {
+  clearTimeout(pressT); pressT = null;
+  pressRing.className = 'press-ring';
+}
+document.querySelectorAll('[data-video="true"]').forEach(el => {
+  el.addEventListener('mousedown', e => startPress(el, e.clientX, e.clientY));
+  el.addEventListener('mouseup', cancelPress);
+  el.addEventListener('mouseleave', cancelPress);
+  el.addEventListener('touchstart', e => { const t = e.touches[0]; startPress(el, t.clientX, t.clientY); }, {passive:true});
+  el.addEventListener('touchend', cancelPress, {passive:true});
+  el.addEventListener('touchmove', cancelPress, {passive:true});
+});
+document.getElementById('voClose').addEventListener('click', () => vo.classList.remove('show'));
+vo.addEventListener('click', e => { if (e.target === vo) vo.classList.remove('show'); });
+updateProgress();
+updateNav();
+</script>
+</body>
+</html>
