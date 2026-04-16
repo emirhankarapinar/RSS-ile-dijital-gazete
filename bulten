@@ -11,15 +11,15 @@
 <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
 <style>
 :root {
-  --paper:      #f2edd8;
+  --paper: #f2edd8;
   --paper-warm: #ede5c8;
-  --ink:        #160f04;
-  --ink-med:    #362a18;
-  --ink-lt:     #6b5c40;
-  --ink-faint:  #9c8b6e;
-  --rule:       #281e0a;
-  --rule-lt:    #bdb090;
-  --red:        #8b1508;
+  --ink: #160f04;
+  --ink-med: #362a18;
+  --ink-lt: #6b5c40;
+  --ink-faint: #9c8b6e;
+  --rule: #281e0a;
+  --rule-lt: #bdb090;
+  --red: #8b1508;
   --fh: 'Playfair Display', Georgia, serif;
   --fb: 'Lora', 'Times New Roman', serif;
   --fm: 'Special Elite', 'Courier New', monospace;
@@ -64,8 +64,6 @@ body {
 a.art-link { color: inherit; text-decoration: none; transition: color .15s; }
 a.art-link:hover { color: var(--red); }
 a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
-
-/* ── Resim stilleri ── */
 .art-img, .hl-img, .cov-img {
   width: 100%; overflow: hidden; border-radius: 2px;
   margin-bottom: 7px; flex-shrink: 0;
@@ -77,8 +75,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 .art-img img, .hl-img img, .cov-img img {
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
-
-/* NAMEPLATE */
 .nameplate { text-align: center; border-bottom: 3px double var(--rule); padding-bottom: 10px; margin-bottom: 10px; flex-shrink: 0; }
 .np-row { display: flex; justify-content: space-between; font-family: var(--fm); font-size: .88rem; color: var(--ink-faint); margin-bottom: 3px; }
 .np-title { font-family: var(--fh); font-size: clamp(1.8rem, 5.5vw, 3rem); font-weight: 900; line-height: 1; }
@@ -86,22 +82,14 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 .np-rule { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
 .np-rule::before, .np-rule::after { content: ''; flex: 1; height: 1px; background: var(--rule-lt); }
 .np-rule span { font-family: var(--fm); font-size: .82rem; color: var(--ink-faint); }
-
-/* SEC */
 .sec { background: var(--ink); color: var(--paper); padding: 5px 14px; font-family: var(--fh); font-size: 1rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; margin-bottom: 10px; }
-.sec-r { font-family: var(--fm); font-size: .78rem; font-weight: 400; opacity: .5; text-transform: none; }
-
-/* HL */
+.sec-r { font-family: var(--fm); font-size: .78rem; font-weight: 400; opacity: .75; text-transform: none; }
 .hl { padding-bottom: 10px; border-bottom: 2px solid var(--rule); margin-bottom: 10px; flex-shrink: 0; }
 .hl-tag { display: inline-block; background: var(--red); color: #fff; font-family: var(--fm); font-size: .82rem; padding: 3px 10px; margin-bottom: 6px; letter-spacing: .06em; text-transform: uppercase; }
 .hl h2 { font-family: var(--fh); font-size: clamp(1.3rem, 3.5vw, 2rem); font-weight: 900; line-height: 1.12; margin-bottom: 6px; }
 .hl-sub { font-family: var(--fh); font-size: 1.05rem; font-style: italic; color: var(--ink-med); line-height: 1.45; }
 .hl-by { font-family: var(--fm); font-size: .82rem; color: var(--ink-faint); margin-top: 6px; }
-
-/* COLS */
 .cols { columns: 2; column-gap: 16px; column-rule: 1px solid var(--rule-lt); flex: 1; overflow: hidden; }
-
-/* ART */
 .art { break-inside: avoid; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--rule-lt); }
 .art:last-child { border-bottom: none; margin-bottom: 0; }
 .art-cat { font-family: var(--fm); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
@@ -110,24 +98,17 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 .art p.dc::first-letter { font-family: var(--fh); font-size: 2.6em; float: left; line-height: .78; margin: 3px 7px 0 0; color: var(--red); font-weight: 900; }
 .art-by { font-family: var(--fm); font-size: .78rem; color: var(--ink-faint); margin-top: 5px; }
 .orn { text-align: center; font-size: .82rem; color: var(--ink-faint); padding: 6px 0; letter-spacing: 5px; flex-shrink: 0; }
-
-/* STATS */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--rule-lt); border-bottom: 1px solid var(--rule-lt); margin-bottom: 10px; flex-shrink: 0; }
 .st { text-align: center; padding: 8px 4px; border-right: 1px solid var(--rule-lt); }
 .st:last-child { border-right: none; }
 .st-n { font-family: var(--fh); font-size: clamp(1.2rem, 2.8vw, 1.8rem); font-weight: 900; color: var(--red); line-height: 1; }
 .st-l { font-family: var(--fm); font-size: .7rem; text-transform: uppercase; color: var(--ink-faint); margin-top: 3px; }
-
-/* TABLE */
 .tbl { width: 100%; border-collapse: collapse; }
 .tbl th { font-family: var(--fm); font-size: .78rem; text-transform: uppercase; text-align: left; padding: 6px 7px; border-bottom: 2px solid var(--rule); color: var(--ink-lt); }
 .tbl td { padding: 7px 7px; border-bottom: 1px solid var(--rule-lt); vertical-align: top; font-size: .92rem; }
 .tbl tr:last-child td { border-bottom: none; }
-.tbl .amt { font-family: var(--fh); font-weight: 900; color: var(--red); font-size: 1.05rem; }
 .tbl .co  { font-family: var(--fh); font-weight: 700; font-size: 1rem; }
 .tbl .dsc { color: var(--ink-faint); font-size: .85rem; font-style: italic; }
-
-/* COVER */
 .cov { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
 .cov-stripe { background: var(--ink); padding: 6px 20px; font-family: var(--fm); font-size: .72rem; color: rgba(242,237,216,.55); letter-spacing: .06em; text-transform: uppercase; text-align: center; flex-shrink: 0; }
 .cov-nameplate { padding: 18px 20px 14px; border-bottom: 5px double var(--rule); text-align: center; flex-shrink: 0; }
@@ -139,8 +120,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 .cov-hl p { font-family: var(--fh); font-size: 1rem; font-style: italic; color: var(--ink-med); line-height: 1.45; }
 .cov-by { font-family: var(--fm); font-size: .72rem; color: var(--ink-faint); margin-top: 6px; }
 .cov-cols { columns: 2; column-gap: 16px; column-rule: 1px solid var(--rule-lt); padding: 12px 20px; flex: 1; overflow: hidden; }
-
-/* BACK */
 .back { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 32px; text-align: center; }
 .back .big { font-family: var(--fh); font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 900; margin-bottom: 10px; }
 .back .tagline { font-family: var(--fh); font-size: .95rem; font-style: italic; color: var(--ink-lt); margin-bottom: 18px; }
@@ -148,16 +127,12 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 .back .info { font-family: var(--fm); font-size: .72rem; color: var(--ink-faint); line-height: 2; }
 .back .sources { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
 .back .sources span { font-family: var(--fh); font-size: .78rem; font-weight: 700; font-style: italic; color: var(--ink-lt); }
-
-/* CONTROLS */
 #controls { position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 500; display: flex; align-items: center; gap: 10px; background: rgba(22,15,4,.88); backdrop-filter: blur(10px); padding: 7px 20px; border-radius: 28px; border: 1px solid rgba(190,175,130,.2); }
 .ctl { font-family: var(--fm); font-size: .72rem; color: var(--paper); background: rgba(242,237,216,.08); border: 1px solid rgba(190,175,130,.22); padding: 6px 18px; border-radius: 16px; cursor: pointer; transition: background .2s, border-color .2s; white-space: nowrap; }
 .ctl:hover { background: rgba(139,21,8,.75); border-color: var(--red); }
 .ctl.off { opacity: .2; pointer-events: none; }
 #pg-info { font-family: var(--fm); font-size: .65rem; color: rgba(242,237,216,.5); min-width: 90px; text-align: center; }
 #hint { position: fixed; top: 12px; right: 14px; z-index: 500; font-family: var(--fm); font-size: .55rem; color: rgba(242,237,216,.25); pointer-events: none; }
-
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .inner { padding: 14px 16px 10px; }
   .np-title { font-size: clamp(1.5rem, 5vw, 2.4rem); }
@@ -207,7 +182,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div id="stage">
 <div id="book">
 
-<!-- ██ SAYFA 0 — KAPAK ██ -->
 <div class="page page-warm">
   <div class="cov">
     <div class="cov-stripe">Teknoloji &amp; Yapay Zeka Haberleri · Haftalık Baskı</div>
@@ -218,24 +192,41 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     <div class="cov-daterow">
       <span>16 Nisan 2026 Perşembe</span>
       <span>Sayı 16 · 2026</span>
-      <span>12 haber</span>
+      <span>6 haber</span>
     </div>
     
       <div class="cov-hl">
         
         <span class="hl-tag">⚡ Son Dakika</span>
-        <h2><a class="art-link" href="https://techcrunch.com/2026/04/15/parasail-raises-32m-to-feed-tokenmaxxing-ai-developers/" target="_blank" rel="noopener">This startup is betting tokenmaxxing will create the next compute giant</a></h2>
+        <h2><a class="art-link" href="" target="_blank" rel="noopener"></a></h2>
         <p>Devamını okumak ister misin?</p>
-        <div class="cov-by">Kaynak — 15 Nisan</div>
+        <div class="cov-by">Kaynak — </div>
       </div>
     <div class="cov-cols">
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p >Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p >Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
     </div>
   </div>
 </div>
 
-<!-- ██ SAYFA 1 — YAPAY ZEKA ██ -->
 <div class="page">
   <div class="inner">
     <div class="nameplate">
@@ -245,15 +236,48 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
       <div class="np-rule"><span>Sayfa 2</span></div>
     </div>
     
-    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">0 haber</span></div>
+      <div class="hl">
+        
+        <span class="hl-tag">🤖 Öne Çıkan</span>
+        <h2><a class="art-link" href="" target="_blank" rel="noopener"></a></h2>
+        <div class="hl-sub"></div>
+        <div class="hl-by">Kaynak — </div>
+      </div>
+    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">4 haber</span></div>
     <div class="cols">
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p class="dc">Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p >Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p >Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
     </div>
     <div class="orn">❧ ❧ ❧</div>
   </div>
 </div>
 
-<!-- ██ SAYFA 2 — AI DEVAM ██ -->
 <div class="page">
   <div class="inner">
     <div class="nameplate">
@@ -270,7 +294,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   </div>
 </div>
 
-<!-- ██ SAYFA 3 — TEKNOLOJİ ██ -->
 <div class="page">
   <div class="inner">
     <div class="nameplate">
@@ -280,14 +303,29 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
       <div class="np-rule"><span>Sayfa 4</span></div>
     </div>
     
-    <div class="sec"><span>💻 Teknoloji</span><span class="sec-r">0 haber</span></div>
+      <div class="hl">
+        
+        <span class="hl-tag">💻 Ana Haber</span>
+        <h2><a class="art-link" href="" target="_blank" rel="noopener"></a></h2>
+        <div class="hl-sub"></div>
+        <div class="hl-by">Kaynak — </div>
+      </div>
+    <div class="sec"><span>💻 Teknoloji</span><span class="sec-r">2 haber</span></div>
     <div class="cols">
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="" target="_blank" rel="noopener">
+            
+            <h3></h3>
+          </a>
+          <p class="dc">Devamını okumak ister misin?</p>
+          <div class="art-by">Kaynak — </div>
+        </div>
     </div>
   </div>
 </div>
 
-<!-- ██ SAYFA 4 — TEKNOLOJİ DEVAM ██ -->
 <div class="page">
   <div class="inner">
     <div class="nameplate">
@@ -304,7 +342,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   </div>
 </div>
 
-<!-- ██ SAYFA 5 — VENTURE / YATIRIM ██ -->
 <div class="page">
   <div class="inner">
     <div class="nameplate">
@@ -314,9 +351,9 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
       <div class="np-rule"><span>Sayfa 6</span></div>
     </div>
     <div class="stats">
-      <div class="st"><div class="st-n">12</div><div class="st-l">Toplam Haber</div></div>
-      <div class="st"><div class="st-n">0</div><div class="st-l">AI</div></div>
-      <div class="st"><div class="st-n">0</div><div class="st-l">Teknoloji</div></div>
+      <div class="st"><div class="st-n">6</div><div class="st-l">Toplam Haber</div></div>
+      <div class="st"><div class="st-n">4</div><div class="st-l">AI</div></div>
+      <div class="st"><div class="st-n">2</div><div class="st-l">Teknoloji</div></div>
       <div class="st"><div class="st-n">0</div><div class="st-l">Venture</div></div>
     </div>
     <div class="sec"><span>💰 Venture Haberleri</span><span class="sec-r">0 haber</span></div>
@@ -324,7 +361,6 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   </div>
 </div>
 
-<!-- ██ SAYFA 6 — ARKA KAPAK ██ -->
 <div class="page page-warm">
   <div class="back">
     <div class="big">TechPulse</div>
@@ -333,7 +369,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     <div class="info">
       Sayı 16 · 2026<br/>
       16 Nisan 2026 Perşembe<br/>
-      Haftalık Baskı · 12 Haber
+      Haftalık Baskı · 6 Haber
     </div>
     <div class="sources">
       <span>TechCrunch</span>
@@ -342,8 +378,8 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   </div>
 </div>
 
-</div><!-- /book -->
-</div><!-- /stage -->
+</div>
+</div>
 
 <script>
 (function () {
@@ -387,13 +423,18 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   const pageFlip = new St.PageFlip(
     document.getElementById('book'),
     {
-      width:  w, height: h, size: 'fixed',
-      showCover: false, drawShadow: true,
+      width: w,
+      height: h,
+      size: 'fixed',
+      showCover: false,
+      drawShadow: true,
       flippingTime: isMobile() ? 600 : 800,
       usePortrait: true,
       maxShadowOpacity: isMobile() ? 0.3 : 0.5,
       mobileScrollSupport: false,
-      autoSize: true, useMouseEvents: true, startZIndex: 0,
+      autoSize: true,
+      useMouseEvents: true,
+      startZIndex: 0,
     }
   );
 
@@ -421,7 +462,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   document.getElementById('btnNext').addEventListener('click', () => pageFlip.flipNext('bottom'));
   document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown') pageFlip.flipNext('bottom');
-    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   pageFlip.flipPrev('bottom');
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') pageFlip.flipPrev('bottom');
   });
 
   sync(0);
