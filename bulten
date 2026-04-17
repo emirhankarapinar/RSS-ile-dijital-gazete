@@ -185,7 +185,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     <div class="cov-daterow">
       <span>17 Nisan 2026 Cuma</span>
       <span>Sayı 16 · 2026</span>
-      <span>20 haber</span>
+      <span>16 haber</span>
     </div>
     <div class="cov-hl">
       <p>Bu bülten; yapay zeka, teknoloji ve yatırım dünyasından öne çıkan gelişmeleri haftalık olarak derler.</p>
@@ -204,33 +204,43 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     </div>
     
     <div class="hl">
-      <div class="hl-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Screenshot-2026-04-16-at-13.01.11.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,5.8356559824806,100,89.31166633486" alt="OpenAI’s big Codex update is a direct shot at Claude Code" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+      <div class="hl-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STKB364_CLAUDE_2_C.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Anthropic releases a new Opus model amid Mythos Preview buzz" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
       <span class="hl-tag">🤖 Öne Çıkan</span>
-      <h2><a class="art-link" href="https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos" target="_blank" rel="noopener">OpenAI’s big Codex update is a direct shot at Claude Code</a></h2>
-      <div class="hl-sub">OpenAI is beefing up its agentic coding and development system, Codex, with a suite of updates that let it use your computer, generate images, and remember from past experiences. The package of updates comes as OpenAI's rivalry with Anthropic intensifies, following the stellar successes of Claude Code and OpenAI aggressively shifting resources to catch up. [&amp;#8230;]</div>
+      <h2><a class="art-link" href="https://www.theverge.com/ai-artificial-intelligence/913184/anthropic-claude-opus-4-7-cybersecurity" target="_blank" rel="noopener">Anthropic releases a new Opus model amid Mythos Preview buzz</a></h2>
+      <div class="hl-sub">Anthropic has released its most powerful &quot;generally available&quot; model to date: Claude Opus 4.7. The company called it a step up from Opus 4.6 for advanced software engineering tasks, particularly in complex coding areas that in the past required more hand-holding. It's also supposed to be better at analyzing images and following instructions, and it [&amp;#8230;]</div>
       <div class="hl-by">The Verge — 16 Nisan</div>
     </div>
   
-    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">3 haber</span></div>
+    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">7 haber</span></div>
     <div class="cols">
       
     <div class="art">
       <div class="art-cat">📰 Yapay Zeka</div>
-      <a class="art-link" href="https://www.theverge.com/tech/913109/google-ai-mode-tabs-sources" target="_blank" rel="noopener">
-        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/google-ai-mode-side-by-side.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Google’s AI Mode update lets you open links without leaving the page" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
-        <h3>Google’s AI Mode update lets you open links without leaving the page</h3>
+      <a class="art-link" href="https://www.theverge.com/podcast/911753/sam-altman-openai-ronan-farrow-new-yorker-feature-trust-liar-ai-industry" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/altman_illo.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Ronan Farrow on Sam Altman&amp;#8217;s ‘unconstrained’ relationship with the truth" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Ronan Farrow on Sam Altman&amp;#8217;s ‘unconstrained’ relationship with the truth</h3>
       </a>
-      <p class="dc">Google is upgrading AI Mode in Chrome with a new feature that will allow you to open links to sources alongside your chat. Now, instead of automatically opening a new tab, clicking a source will open the website side by side with AI Mode, allowing you to ask follow-up questions about what's on the page. [&amp;#8230;]</p>
+      <p class="dc">Today on Decoder, I’m talking with Ronan Farrow, one of the biggest stars of investigative reporting working today. He broke the Harvey Weinstein story, among many, many others. And just last week, he and co-author Andrew Marantz published an incredible deep-dive feature in The New Yorker about OpenAI CEO Sam Altman, his trustworthiness, and the [&amp;#8230;]</p>
       <div class="art-by">The Verge — 16 Nisan</div>
     </div>
   
     <div class="art">
       <div class="art-cat">📰 Yapay Zeka</div>
-      <a class="art-link" href="https://www.theverge.com/tech/913202/gemini-personal-intelligence-images-nano-banana" target="_blank" rel="noopener">
-        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Screenshot-2026-04-16-at-8.32.59AM.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Gemini can now pull from Google Photos to generate personalized images" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
-        <h3>Gemini can now pull from Google Photos to generate personalized images</h3>
+      <a class="art-link" href="https://www.theverge.com/ai-artificial-intelligence/912997/character-ai-books-mode" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/c.aiBooks-Header-Image.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Character.AI’s new Books mode turns reading into roleplay" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Character.AI’s new Books mode turns reading into roleplay</h3>
       </a>
-      <p class="">Google's Personal Intelligence feature, which lets Gemini pull data from apps like Google Photos to offer responses tailored to you, can now use that data and its Nano Banana 2 image model to create images based on your personal context. With the feature, you can use prompts like &quot;Design my dream house&quot; or &quot;Create a [&amp;#8230;]</p>
+      <p class="">Mired in controversy and legal woes over concerns about its chatbots' interactions with users, particularly teens, Character.AI seems to be playing it safer with a new &quot;Books&quot; mode. The new format lets users step inside familiar worlds for a more structured roleplaying experience, one the company hopes will broaden perceptions of what AI roleplay can [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Yapay Zeka</div>
+      <a class="art-link" href="https://www.theverge.com/tech/913068/canva-ai-2-update-prompt-based-editing-availability" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Canva-AI-2.0.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Canva’s AI 2.0 update goes all in on prompt-powered design tools" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Canva’s AI 2.0 update goes all in on prompt-powered design tools</h3>
+      </a>
+      <p class="">Canva has overhauled its design and workspace suite as it attempts to become the ultimate centralized hub for AI-powered content creation. The platform announced its Canva AI 2.0 update today, introducing updated tools and new prompt-based editing capabilities that allow users to make or adjust their work by describing what they want to create to [&amp;#8230;]</p>
       <div class="art-by">The Verge — 16 Nisan</div>
     </div>
   
@@ -243,99 +253,45 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   <div class="inner">
     <div class="nameplate">
       <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
-      <div class="np-title">Venture</div>
-      <div class="np-sub">Yatırım &amp; Finansman</div>
+      <div class="np-title">Yapay Zeka</div>
+      <div class="np-sub">Araştırma &amp; Uygulamalar</div>
       <div class="np-rule"><span>Sayfa 3</span></div>
     </div>
-
-    
-    <div class="stats">
-      <div class="st"><div class="st-n">20</div><div class="st-l">Toplam Haber</div></div>
-      <div class="st"><div class="st-n">3</div><div class="st-l">AI</div></div>
-      <div class="st"><div class="st-n">0</div><div class="st-l">Teknoloji</div></div>
-      <div class="st"><div class="st-n">17</div><div class="st-l">Venture</div></div>
+    <div class="sec"><span>🧠 AI Devam</span><span class="sec-r">3 haber</span></div>
+    <div class="cols">
+      
+    <div class="art">
+      <div class="art-cat">📰 Yapay Zeka</div>
+      <a class="art-link" href="https://www.theverge.com/column/912627/trump-jesus-ai-whcd-penguin-meme" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/trump-jesus-altered.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Trump’s posting even more AI-generated Trump-Jesus fan art" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Trump’s posting even more AI-generated Trump-Jesus fan art</h3>
+      </a>
+      <p class="dc">Hello and welcome to Regulator, a newsletter for Verge subscribers about Big Tech power plays in Washington and beyond. (And when I say beyond, I mean the great beyond, like Heaven, maybe.) If you've found your way to this newsletter from the wild, annual subscriptions are currently 50 percent off. That's $30 a year for [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 15 Nisan</div>
     </div>
-    
-
-    <div class="sec">
-      <span>💰 Venture Haberleri</span>
-      <span class="sec-r">6 haber</span>
+  
+    <div class="art">
+      <div class="art-cat">📰 Yapay Zeka</div>
+      <a class="art-link" href="https://www.theverge.com/tech/912638/google-gemini-mac-app" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Gemini-for-MacOS_03_Capsule-Image_16x9.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Google launches a Gemini AI app on Mac" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Google launches a Gemini AI app on Mac</h3>
+      </a>
+      <p class="">Google is launching a new Gemini app on Mac that allows you to interact with the AI assistant without switching windows on your desktop. With the app, you can use the Option + Space shortcut to pull up a floating chat bubble, where you can ask Gemini questions and share your window. Before sharing your [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 15 Nisan</div>
     </div>
-
-    <table class="tbl">
-      <thead>
-        <tr><th>Şirket / Haber</th><th>Kaynak</th><th>Tarih</th></tr>
-      </thead>
-      <tbody>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/15/accel-raises-5b-to-back-late-stage-bets/" target="_blank" rel="noopener">
-                <span class="co">Accel raises $5B to back late-stage bets</span>
-                <br/><span class="dsc">Accel announced on Tuesday that it raised $5 billion in fresh capital to back late-stage companies building AI.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>15 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/15/anthropic-shrugs-off-vc-funding-offers-valuing-it-at-800b-for-now/" target="_blank" rel="noopener">
-                <span class="co">Anthropic shrugs off VC funding offers valuing it at $800B+, for now</span>
-                <br/><span class="dsc">VCs are frothing at the mouth to write more checks to Anthropic at a valuation that matches or beats OpenAI's.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>15 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/14/financial-risk-management-platform-pillar-raises-20m-seed-in-round-led-by-a16z/" target="_blank" rel="noopener">
-                <span class="co">Financial risk management platform Pillar raises $20M seed in round led by a16z</span>
-                <br/><span class="dsc">Pillar hopes to offer sophisticated, institutional-grade tools to small and medium-sized enterprises. &quot;Our goal is to make hedging as accessible and ubiquitous as payments or accounting software,&quot; he said.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>14 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/" target="_blank" rel="noopener">
-                <span class="co">In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together</span>
-                <br/><span class="dsc">The first StrictlyVC of the year will be coming to San Francisco before you know it. There are still a few tickets available to join us and our stacked speaker lineup April 30, so register today!</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>14 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/" target="_blank" rel="noopener">
-                <span class="co">Vercel CEO Guillermo Rauch signals IPO readiness as AI agents fuel revenue surge</span>
-                <br/><span class="dsc">While many startups founded prior to the emergence of ChatGPT are struggling to position themselves for the AI era, Vercel, a 10-year-old dev tool and website hosting platform, is benefiting from the explosion of AI-generated apps and agents.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>13 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/11/nvidia-backed-sifive-hits-3-65-billion-valuation-for-open-ai-chips/" target="_blank" rel="noopener">
-                <span class="co">Nvidia-backed SiFive hits $3.65B valuation for open AI chips</span>
-                <br/><span class="dsc">The deal is interesting for a number of reasons, including that SiFive's chip designs are based on RISC-V, not x86 or ARM.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>11 Nisan</td>
-          </tr>
-        
-      </tbody>
-    </table>
+  
+    <div class="art">
+      <div class="art-cat">📰 Yapay Zeka</div>
+      <a class="art-link" href="https://www.theverge.com/news/912484/allbirds-ai-hyperscale" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1253153052.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Allbirds announced a switch from shoes to AI and its stock jumped 600 percent" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Allbirds announced a switch from shoes to AI and its stock jumped 600 percent</h3>
+      </a>
+      <p class="">Allbirds had a hit a decade ago with its Wool Runner shoes, but after a $4 billion IPO in 2021, the business never turned a profit, and sales dropped nearly 50 percent between 2022 and 2025. The company recently announced it would sell off its name and assets for $39 million to American Exchange after [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 15 Nisan</div>
+    </div>
+  
+    </div>
+    <div class="orn">— ✦ —</div>
   </div>
 </div>
 
@@ -343,92 +299,54 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   <div class="inner">
     <div class="nameplate">
       <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
-      <div class="np-title">Venture</div>
-      <div class="np-sub">Devam</div>
+      <div class="np-title">Teknoloji</div>
+      <div class="np-sub">Donanım · Yazılım · Ürün</div>
       <div class="np-rule"><span>Sayfa 4</span></div>
     </div>
-
     
-
-    <div class="sec">
-      <span>💰 Venture Devam</span>
-      <span class="sec-r">6 haber</span>
+    <div class="hl">
+      <div class="hl-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Creative-apps-declare-war-on-Adobe.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="The creative software industry has declared war on Adobe" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+      <span class="hl-tag">💻 Ana Haber</span>
+      <h2><a class="art-link" href="https://www.theverge.com/tech/913765/adobe-rivals-free-creative-software-app-updates" target="_blank" rel="noopener">The creative software industry has declared war on Adobe</a></h2>
+      <div class="hl-sub">All empires eventually fall, and it seems the creative software industry has collectively decided that Adobe's time has come. The Creative Cloud provider's suite of design tools have been considered the industry standard for decades - despite unpopular decisions to fully embrace generative AI and abandon software licenses in favor of expensive, complicated subscriptions. Pricing [&amp;#8230;]</div>
+      <div class="hl-by">The Verge — 17 Nisan</div>
     </div>
-
-    <table class="tbl">
-      <thead>
-        <tr><th>Şirket / Haber</th><th>Kaynak</th><th>Tarih</th></tr>
-      </thead>
-      <tbody>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/10/final-24-hours-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/" target="_blank" rel="noopener">
-                <span class="co">Last 24 hours: Save up to $500 on your TechCrunch Disrupt 2026 pass</span>
-                <br/><span class="dsc">This is it. Tonight is your last chance to lock in savings of up to $500 for your TechCrunch Disrupt 2026 pass. These discounts end at 11:59 p.m. PT.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>10 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/09/how-to-make-the-startup-battlefield-top-20-and-what-every-company-gets-regardless/" target="_blank" rel="noopener">
-                <span class="co">How to make the Startup Battlefield Top 20 — and what every company gets regardless</span>
-                <br/><span class="dsc">Every founder who applies to Startup Battlefield wants the same thing: the Disrupt Main Stage. Here’s how to get there and why the opportunity starts well before the main stage.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>9 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/09/final-2-days-to-save-up-to-500-on-your-techcrunch-disrupt-2026-ticket/" target="_blank" rel="noopener">
-                <span class="co">Final 2 days to save up to $500 on your TechCrunch Disrupt 2026 ticket</span>
-                <br/><span class="dsc">Ticket discounts of up to $500 will end tomorrow, April 10, at 11:59 p.m. PT. After that, prices for TechCrunch Disrupt 2026 go up again. Miss this, and you’ll be paying more for the same access to one of the most anticipated tech events of the year. Register now to lock in these savings.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>9 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/09/collide-capital-raises-95m-fund-to-back-fintech-future-of-work-startups/" target="_blank" rel="noopener">
-                <span class="co">Collide Capital raises $95M fund to back fintech, future-of-work startups</span>
-                <br/><span class="dsc">Collide Capital, founded by Brian Hollins and Aaron Samuels, announced the close of a $95 million Fund II.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>9 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/08/final-3-days-to-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/" target="_blank" rel="noopener">
-                <span class="co">Final 3 days to save up to $500 on your TechCrunch Disrupt 2026 pass</span>
-                <br/><span class="dsc">Save up to $500 on your TechCrunch Disrupt 2026 pass until April 10, 11:59 p.m. PT. Secure your spot at the center of the tech ecosystem. Register today.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>8 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-to-back-and-build-physical-ai-startups/" target="_blank" rel="noopener">
-                <span class="co">VC Eclipse has a new $1.3B fund to back — and build — ‘physical AI’ startups</span>
-                <br/><span class="dsc">Eclipse will put some of that money towards incubating, or building startups.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>7 Nisan</td>
-          </tr>
-        
-      </tbody>
-    </table>
+  
+    <div class="sec"><span>💻 Teknoloji</span><span class="sec-r">9 haber</span></div>
+    <div class="cols">
+      
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/tech/913752/blue-origin-reusable-rocket-test-ast-sapcemobile" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/News_NG3-MissionPatch.webp?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="A giant cell tower is going to space this weekend" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>A giant cell tower is going to space this weekend</h3>
+      </a>
+      <p class="dc">This weekend's scheduled Blue Origin rocket launch is rather momentous. Success would signal an end to SpaceX's monopoly on reusable orbital launch vehicles, and set up a three-way race to make that &quot;No Service&quot; indicator on your phone disappear forever. On Sunday morning, Jeff Bezos' massive New Glenn rocket is scheduled to launch with the [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 17 Nisan</div>
+    </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/gadgets/913523/google-gucci-ai-smart-glasses-2027" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/Aura_4_TAS_XR_-Nov-06-2025_113.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Gucci-branded Google smart glasses are coming next year" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Gucci-branded Google smart glasses are coming next year</h3>
+      </a>
+      <p class="">Google is reportedly partnering with Gucci to make a pair of AI smart glasses stylish enough people might actually want to wear them. According to Reuters, Gucci parent company Kering is planning to launch the glasses sometime in 2027. Google's first pair of Android XR glasses, &quot;Project Aura,&quot; are expected to launch this year. They [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/streaming/913539/netflix-mobile-app-update-vertical-video" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK072-05.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Netflix embraces vertical video with major mobile app update" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Netflix embraces vertical video with major mobile app update</h3>
+      </a>
+      <p class="">Netflix announced on Thursday that it will be launching a redesigned mobile app, which will include a vertical video feed, at the end of April. &quot;This redesign will better reflect our expanding entertainment offering and make it easier for members to engage how and when they want,&quot; the company said in its Q1 2026 earnings [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    </div>
+    <div class="orn">❧ ❧ ❧</div>
   </div>
 </div>
 
@@ -436,81 +354,81 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   <div class="inner">
     <div class="nameplate">
       <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
-      <div class="np-title">Venture</div>
+      <div class="np-title">Teknoloji</div>
       <div class="np-sub">Devam</div>
       <div class="np-rule"><span>Sayfa 5</span></div>
     </div>
-
-    
-
-    <div class="sec">
-      <span>💰 Venture Devam</span>
-      <span class="sec-r">5 haber</span>
+    <div class="sec"><span>💻 Devam</span><span class="sec-r">4 haber</span></div>
+    <div class="cols">
+      
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/gadgets/913352/ozlo-sleepbuds-mothers-day-deal-sale" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25692080/ozlo1.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Ozlo’s comfy Sleepbuds are nearly 30 percent off in the run-up to Mother’s Day" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Ozlo’s comfy Sleepbuds are nearly 30 percent off in the run-up to Mother’s Day</h3>
+      </a>
+      <p class="dc">If you’re struggling to get a full night of rest, a good pair of sleep earbuds can help you tune out unwanted distractions. The Ozlo Sleepbuds are one such option, and they’re currently available for $249 ($100 off) in the run-up to Mother’s Day at Amazon and Ozlo’s online storefront, which is easily the lowest [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
     </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/gadgets/913396/teenage-engineering-ko-amp-35-leak" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/Screenshot-2026-04-16-at-1.43.43PM.png?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Teenage Engineering might be getting into instrument amps next" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Teenage Engineering might be getting into instrument amps next</h3>
+      </a>
+      <p class="">An unannounced Teenage Engineering device, the KO-Amp 35, can be found over at the FCC in a new filing. The label clearly marks it as a member of the midrange EP family instruments, which currently includes the KO-II and its spinoffs, the Riddim and the Medieval. The name suggests that TE could be getting into [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/report/913445/deepfake-detection-reality-defender-pindrop-ai" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK419_DEEPFAKE_3_CVIRGINIA_B.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="The only way to fight deepfakes is by making deepfakes" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>The only way to fight deepfakes is by making deepfakes</h3>
+      </a>
+      <p class="">I was unsure if my parents would notice that the voice on the other end wasn't mine - or that it was mine, sort of, but it wasn't me. The voice said hello, asked my dad how he was doing, and asked again when he didn't respond quickly enough. &quot;What is that, Gaby?&quot; He realized [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/tech/913177/casely-recall-power-pods-wireless-bank-lithium-ion-battery-fire-explosion-uscpsc" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/casely.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="Casely has reannounced a power bank recall from 2025 following a fatality" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>Casely has reannounced a power bank recall from 2025 following a fatality</h3>
+      </a>
+      <p class="">Casely first recalled over 429,000 of its 5,000mAh Power Pods wireless power banks in April 2025 following 51 reports of their lithium-ion batteries &quot;overheating, expanding or catching fire,&quot; resulting in six minor burn injuries. Both the company and the US Consumer Product Safety Commission (USCPSC) are reannouncing the same recall today following 28 additional reports [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    </div>
+    <div class="orn">❧ ❧ ❧</div>
+  </div>
+</div>
 
-    <table class="tbl">
-      <thead>
-        <tr><th>Şirket / Haber</th><th>Kaynak</th><th>Tarih</th></tr>
-      </thead>
-      <tbody>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/07/4-days-left-to-save-close-to-500-on-techcrunch-disrupt-2026-passes/" target="_blank" rel="noopener">
-                <span class="co">4 days left to save close to $500 on TechCrunch Disrupt 2026 passes</span>
-                <br/><span class="dsc">Four days left to save up to $482 on your TechCrunch Disrupt 2026 ticket. These low rates will disappear on April 10 at 11:59 p.m. PT. Register now.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>7 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/07/the-ai-gold-rush-is-pulling-private-wealth-into-riskier-earlier-bets/" target="_blank" rel="noopener">
-                <span class="co">The AI gold rush is pulling private wealth into riskier, earlier bets</span>
-                <br/><span class="dsc">On a recent episode of Equity, we talked to Arena Private Wealth to explore a growing trend: family offices bypassing VCs to gain direct exposure to AI startups, turning them from passive investors into active participants.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>7 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/" target="_blank" rel="noopener">
-                <span class="co">OpenAI alums have been quietly investing from a new, potentially $100M fund</span>
-                <br/><span class="dsc">Zero Shot, a new venture capital fund with deep ties to OpenAI, is aiming to raise $100 million for its first fund. It has already written some checks.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>6 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/06/startup-battlefield-200-applications-open-get-vc-access-techcrunch-coverage-and-100k/" target="_blank" rel="noopener">
-                <span class="co">Startup Battlefield 200 applications open: a chance for VC access, TechCrunch coverage, and $100K</span>
-                <br/><span class="dsc">Nominate your startup, or one you know that deserves the spotlight, and finish the process by applying. Selected 200 have a chance at VC access, TechCrunch coverage, and $100K for Startup Battlefield 200. Applications close on May 27.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>6 Nisan</td>
-          </tr>
-        
-          <tr>
-            <td>
-              <a class="art-link" href="https://techcrunch.com/2026/04/06/massive-ticket-savings-of-up-to-500-this-week-for-techcrunch-disrupt-2026/" target="_blank" rel="noopener">
-                <span class="co">Ticket savings of up to $500 this week for TechCrunch Disrupt 2026</span>
-                <br/><span class="dsc">Starting today, you have 5 days to save nearly $500 on your ticket to TechCrunch Disrupt 2026. This offer disappears Friday, April 10, at 11:59 p.m. PT. Register here to secure these low rates.</span>
-              </a>
-            </td>
-            <td>TechCrunch</td>
-            <td>6 Nisan</td>
-          </tr>
-        
-      </tbody>
-    </table>
+<div class="page">
+  <div class="inner">
+    <div class="nameplate">
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
+      <div class="np-title">Teknoloji</div>
+      <div class="np-sub">Devam</div>
+      <div class="np-rule"><span>Sayfa 6</span></div>
+    </div>
+    <div class="sec"><span>💻 Devam</span><span class="sec-r">1 haber</span></div>
+    <div class="cols">
+      
+    <div class="art">
+      <div class="art-cat">📰 Teknoloji</div>
+      <a class="art-link" href="https://www.theverge.com/gadgets/912767/best-macbook-neo-accessories" target="_blank" rel="noopener">
+        <div class="art-img"><img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&amp;#038;strip=all&amp;#038;crop=0,0,100,100" alt="The nine best ways to protect, customize, and accessorize your MacBook Neo" loading="lazy" onerror="this.parentElement.style.display='none'"/></div>
+        <h3>The nine best ways to protect, customize, and accessorize your MacBook Neo</h3>
+      </a>
+      <p class="dc">The MacBook Neo is poised to be a top-selling laptop in 2026, thanks in large part to its affordable $599 entry price. Despite launching at a more accessible price point than Apple’s $1,099 (though often discounted) 2026 MacBook Air, the Neo makes surprisingly few concessions in terms of build quality. Its design has the same [&amp;#8230;]</p>
+      <div class="art-by">The Verge — 16 Nisan</div>
+    </div>
+  
+    </div>
+    <div class="orn">❧ ❧ ❧</div>
   </div>
 </div>
 
@@ -523,7 +441,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     <div class="info">
       Sayı 16 · 2026<br/>
       17 Nisan 2026 Cuma<br/>
-      Haftalık Baskı · 20 Haber
+      Haftalık Baskı · 16 Haber
     </div>
     <div class="sources">
       <span>TechCrunch</span>
