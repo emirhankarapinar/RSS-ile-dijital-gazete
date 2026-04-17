@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
 <meta name="description" content="TechPulse Gazette — Teknoloji haberleri."/>
-<title>TechPulse Gazette — 16 Nisan 2026</title>
+<title>TechPulse Gazette — 17 Nisan 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Special+Elite&display=swap" rel="stylesheet"/>
@@ -190,21 +190,39 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
       <div class="tagline">Teknoloji &amp; Yapay Zeka Gazetesi</div>
     </div>
     <div class="cov-daterow">
-      <span>16 Nisan 2026 Perşembe</span>
+      <span>17 Nisan 2026 Cuma</span>
       <span>Sayı 16 · 2026</span>
-      <span>1 haber</span>
+      <span>12 haber</span>
     </div>
     
       <div class="cov-hl">
         
         <span class="hl-tag">⚡ Son Dakika</span>
-        <h2><a class="art-link" href="" target="_blank" rel="noopener"></a></h2>
-        <p>Devamını okumak ister misin?</p>
-        <div class="cov-by">Kaynak — </div>
+        <h2><a class="art-link" href="#" target="_blank" rel="noopener">Başlıksız Haber</a></h2>
+        <p>Özet bulunamadı.</p>
+        <div class="cov-by">Kaynak</div>
       </div>
     <div class="cov-cols">
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
       
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
     </div>
   </div>
 </div>
@@ -212,7 +230,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div class="page">
   <div class="inner">
     <div class="nameplate">
-      <div class="np-row"><span>TechPulse Gazette</span><span>16 Nisan 2026</span></div>
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
       <div class="np-title">Yapay Zeka</div>
       <div class="np-sub">AI Haberleri</div>
       <div class="np-rule"><span>Sayfa 2</span></div>
@@ -221,13 +239,40 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
       <div class="hl">
         
         <span class="hl-tag">🤖 Öne Çıkan</span>
-        <h2><a class="art-link" href="" target="_blank" rel="noopener"></a></h2>
-        <div class="hl-sub"></div>
-        <div class="hl-by">Kaynak — </div>
+        <h2><a class="art-link" href="#" target="_blank" rel="noopener">Başlıksız Haber</a></h2>
+        <div class="hl-sub">Özet bulunamadı.</div>
+        <div class="hl-by">Kaynak</div>
       </div>
-    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">1 haber</span></div>
+    <div class="sec"><span>🧠 AI Haberleri</span><span class="sec-r">4 haber</span></div>
     <div class="cols">
-      <p style="color:var(--ink-faint);font-style:italic;padding:8px 0">Bu hafta AI haberi yok.</p>
+      
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p class="dc">Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
     </div>
     <div class="orn">❧ ❧ ❧</div>
   </div>
@@ -236,7 +281,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div class="page">
   <div class="inner">
     <div class="nameplate">
-      <div class="np-row"><span>TechPulse Gazette</span><span>16 Nisan 2026</span></div>
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
       <div class="np-title">Yapay Zeka</div>
       <div class="np-sub">Araştırma &amp; Uygulamalar</div>
       <div class="np-rule"><span>Sayfa 3</span></div>
@@ -252,15 +297,49 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div class="page">
   <div class="inner">
     <div class="nameplate">
-      <div class="np-row"><span>TechPulse Gazette</span><span>16 Nisan 2026</span></div>
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
       <div class="np-title">Teknoloji</div>
       <div class="np-sub">Donanım · Yazılım · Ürün</div>
       <div class="np-rule"><span>Sayfa 4</span></div>
     </div>
     
-    <div class="sec"><span>💻 Teknoloji</span><span class="sec-r">0 haber</span></div>
+      <div class="hl">
+        
+        <span class="hl-tag">💻 Ana Haber</span>
+        <h2><a class="art-link" href="#" target="_blank" rel="noopener">Başlıksız Haber</a></h2>
+        <div class="hl-sub">Özet bulunamadı.</div>
+        <div class="hl-by">Kaynak</div>
+      </div>
+    <div class="sec"><span>💻 Teknoloji</span><span class="sec-r">4 haber</span></div>
     <div class="cols">
-      <p style="color:var(--ink-faint);font-style:italic;padding:8px 0">Bu hafta teknoloji haberi yok.</p>
+      
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p class="dc">Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
+        <div class="art">
+          <div class="art-cat">📰 Haber</div>
+          <a class="art-link" href="#" target="_blank" rel="noopener">
+            
+            <h3>Başlıksız Haber</h3>
+          </a>
+          <p >Özet bulunamadı.</p>
+          <div class="art-by">Kaynak</div>
+        </div>
     </div>
   </div>
 </div>
@@ -268,7 +347,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div class="page">
   <div class="inner">
     <div class="nameplate">
-      <div class="np-row"><span>TechPulse Gazette</span><span>16 Nisan 2026</span></div>
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
       <div class="np-title">Teknoloji</div>
       <div class="np-sub">Devam</div>
       <div class="np-rule"><span>Sayfa 5</span></div>
@@ -284,19 +363,65 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 <div class="page">
   <div class="inner">
     <div class="nameplate">
-      <div class="np-row"><span>TechPulse Gazette</span><span>16 Nisan 2026</span></div>
+      <div class="np-row"><span>TechPulse Gazette</span><span>17 Nisan 2026</span></div>
       <div class="np-title">Venture</div>
       <div class="np-sub">Yatırım &amp; Finansman</div>
       <div class="np-rule"><span>Sayfa 6</span></div>
     </div>
     <div class="stats">
-      <div class="st"><div class="st-n">1</div><div class="st-l">Toplam Haber</div></div>
-      <div class="st"><div class="st-n">1</div><div class="st-l">AI</div></div>
-      <div class="st"><div class="st-n">0</div><div class="st-l">Teknoloji</div></div>
-      <div class="st"><div class="st-n">0</div><div class="st-l">Venture</div></div>
+      <div class="st"><div class="st-n">12</div><div class="st-l">Toplam Haber</div></div>
+      <div class="st"><div class="st-n">4</div><div class="st-l">AI</div></div>
+      <div class="st"><div class="st-n">4</div><div class="st-l">Teknoloji</div></div>
+      <div class="st"><div class="st-n">4</div><div class="st-l">Venture</div></div>
     </div>
-    <div class="sec"><span>💰 Venture Haberleri</span><span class="sec-r">0 haber</span></div>
-    <p style="color:var(--ink-faint);font-style:italic;padding:8px 0">Bu hafta venture haberi yok.</p>
+    <div class="sec"><span>💰 Venture Haberleri</span><span class="sec-r">4 haber</span></div>
+    
+    <table class="tbl">
+      <thead><tr><th>Şirket / Haber</th><th>Kaynak</th><th>Tarih</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>
+            <a class="art-link" href="#" target="_blank" rel="noopener">
+              <span class="co">Başlıksız Haber</span>
+              <br/><span class="dsc">Özet bulunamadı.</span>
+            </a>
+          </td>
+          <td>Kaynak</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="art-link" href="#" target="_blank" rel="noopener">
+              <span class="co">Başlıksız Haber</span>
+              <br/><span class="dsc">Özet bulunamadı.</span>
+            </a>
+          </td>
+          <td>Kaynak</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="art-link" href="#" target="_blank" rel="noopener">
+              <span class="co">Başlıksız Haber</span>
+              <br/><span class="dsc">Özet bulunamadı.</span>
+            </a>
+          </td>
+          <td>Kaynak</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <a class="art-link" href="#" target="_blank" rel="noopener">
+              <span class="co">Başlıksız Haber</span>
+              <br/><span class="dsc">Özet bulunamadı.</span>
+            </a>
+          </td>
+          <td>Kaynak</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
@@ -307,8 +432,8 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     <div class="back-rule"></div>
     <div class="info">
       Sayı 16 · 2026<br/>
-      16 Nisan 2026 Perşembe<br/>
-      Haftalık Baskı · 1 Haber
+      17 Nisan 2026 Cuma<br/>
+      Haftalık Baskı · 12 Haber
     </div>
     <div class="sources">
       <span>TechCrunch</span>
@@ -338,6 +463,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     const availH = vh - ctrlH;
     const availW = vw;
     let w, h;
+
     if (isMobile()) {
       w = availW - 16;
       h = availH - 12;
@@ -348,10 +474,14 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     } else {
       w = Math.floor((availW - 24) / 2);
       h = Math.floor(w * 1.35);
-      if (h > availH - 10) { h = availH - 10; w = Math.floor(h / 1.35); }
+      if (h > availH - 10) {
+        h = availH - 10;
+        w = Math.floor(h / 1.35);
+      }
       w = Math.min(w, 960);
       h = Math.min(h, 900);
     }
+
     w = Math.max(260, w);
     h = Math.max(340, h);
     return { w, h };
@@ -359,23 +489,20 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
 
   const { w, h } = dims();
 
-  const pageFlip = new St.PageFlip(
-    document.getElementById('book'),
-    {
-      width: w,
-      height: h,
-      size: 'fixed',
-      showCover: false,
-      drawShadow: true,
-      flippingTime: isMobile() ? 600 : 800,
-      usePortrait: true,
-      maxShadowOpacity: isMobile() ? 0.3 : 0.5,
-      mobileScrollSupport: false,
-      autoSize: true,
-      useMouseEvents: true,
-      startZIndex: 0,
-    }
-  );
+  const pageFlip = new St.PageFlip(document.getElementById('book'), {
+    width: w,
+    height: h,
+    size: 'fixed',
+    showCover: false,
+    drawShadow: true,
+    flippingTime: isMobile() ? 600 : 800,
+    usePortrait: true,
+    maxShadowOpacity: isMobile() ? 0.3 : 0.5,
+    mobileScrollSupport: false,
+    autoSize: true,
+    useMouseEvents: true,
+    startZIndex: 0,
+  });
 
   pageFlip.loadFromHTML(document.querySelectorAll('.page'));
 
@@ -391,6 +518,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     const total = pageFlip.getPageCount();
     const atStart = idx === 0;
     const atEnd = isMobile() ? idx >= total - 1 : idx >= total - 2;
+
     document.getElementById('btnPrev').classList.toggle('off', atStart);
     document.getElementById('btnNext').classList.toggle('off', atEnd);
     document.getElementById('pg-info').textContent = getLabel(idx);
@@ -399,6 +527,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
   pageFlip.on('flip', e => sync(e.data));
   document.getElementById('btnPrev').addEventListener('click', () => pageFlip.flipPrev('bottom'));
   document.getElementById('btnNext').addEventListener('click', () => pageFlip.flipNext('bottom'));
+
   document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown') pageFlip.flipNext('bottom');
     if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') pageFlip.flipPrev('bottom');
@@ -411,6 +540,7 @@ a.art-link:hover h3 { color: var(--red); text-decoration: underline; }
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => location.reload(), 350);
   }
+
   window.addEventListener('resize', onResize);
   window.addEventListener('orientationchange', onResize);
 }());
